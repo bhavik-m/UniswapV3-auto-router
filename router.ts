@@ -19,9 +19,8 @@ let route;
 (async function func(){
 route = await router.route(
   usdcAmount,
-  WETH.wrapped,
+  WETH,
   TradeType.EXACT_INPUT,
-  undefined,
 );
 console.log("route -> " , route); 
 })();
